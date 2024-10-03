@@ -1,0 +1,236 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Cardo", "Didact Gothic", sans-serif;
+    text-decoration: none;
+    list-style: none;
+    
+}
+
+                /* VARIABLES */
+:root{
+    --color_text-primary: #dadada;
+    --background-header-color: #1a1919;
+    --background-header-sections: #0f0f0f;
+    --card_background-color: #c4c4b3;
+    /*Text Size*/
+    --text_size_title: 24px;
+    --text_title_card: 28px;
+    --text_paragraph_card: 16px;
+    --box_shadow-primary: 0px 6px 30px rgba(211, 211, 211, 0.096);
+    --box_shadow-hover: 0px 6px 50px -20px rgba(207, 209, 198, 0.425);
+
+
+}
+
+                /* HEADER */
+
+header{
+    width: 100%;
+    
+}
+.container-header{
+    height: 100%;
+    width: 100%;
+}
+.login{
+    display: block;
+    background-color: var(--background-header-sections);
+    text-align: right;    
+}
+.login a{
+    font-family: "Didact Gothic", sans-serif;
+    color: var(--color_text-primary);
+    display: block;
+    width: 100%;
+    padding-right: 10px;
+    font-size: 15px;
+    font-weight: 200;
+    transition: 250ms;
+}
+.login a:hover{
+    background-color: #171718;
+    color: rgb(183, 192, 151);
+}
+
+.menu{
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.521);
+    background-color: var(--background-header-color);
+    background-image: url(/Assets/images/textura-efecto-falla-negra.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 180px;
+    
+    align-items: center;
+    border-bottom: 1px solid rgb(46, 45, 45);
+    border-top: 1px solid rgb(46, 45, 45);
+    
+}
+
+.menu nav ul{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    gap: 60px;
+    
+}
+
+.menu nav ul li a{
+    font-family: "Didact Gothic", sans-serif;
+    color: var(--color_text-primary);    font-weight: 500;
+    font-size: var(--text_size_title);
+    transition: 250ms;
+}
+.menu nav ul li a:hover{
+    color: rgb(183, 192, 151);
+}
+
+.logo img{
+    width: 180px;
+    height: 160px; 
+    
+}
+
+
+                /* BODY */
+            
+body{
+    background-color: #0f0f0f;
+    background-image: url(/Assets/images/DirtyPaper_Texture.png);
+}        
+
+
+                /*CARDS*/
+
+
+.main-card-container{
+    margin-top: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+.card-container{
+    margin-top: 40px;
+    display: flex;
+    max-width: 550px;
+    min-width: 450px;
+    max-height: 225px;
+
+    
+    background-color: var(--card_background-color);
+    border: solid rgba(128, 128, 128, 0.767) 1px;
+    border-radius: 5px;
+    box-shadow: var(--box_shadow-primary);
+
+}
+.card-container:hover{
+    box-shadow: var(--box_shadow-hover);
+}
+.card-box-container{
+    display: flex;
+    padding: 10px 20px;
+}
+.img-container img{
+    width: 200px;
+    border-radius: 5px;
+}
+.card-text{
+    display: block;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin-left: 20px;
+}
+.card-text h1{
+    font-family: "Cardo", sans-serif;
+    font-size: var(--text_title_card);
+}
+.card-text p{
+    font-family: "Didact Gothic", sans-serif;
+    font-size: var(--text_paragraph_card);
+}
+.button-container{
+    display: block;
+    width: 100%;
+    margin-top: 50px;
+}
+.card-text a{
+    font-family: "Didact Gothic", sans-serif;
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 14px;
+    padding: 8px;
+    border: solid rgba(104, 33, 88, 0.226) 2px;
+    border-radius: 5px;
+    background-color: rgba(15, 14, 14, 0.945);
+    transition: 250ms;
+}
+.card-text a:hover{
+    color: rgb(230, 227, 190);
+    background-color: rgba(14, 8, 8, 0.76);
+    padding: 9px;
+}
+
+                /*FOOTER*/
+
+.gato{
+    margin-top: 20px;
+    margin-left: 40px;
+}           
+.gato p{
+    display: block;
+    width: 100px;
+}                
+footer{
+    background-color: var(--background-header-color);
+    background-image: url(/Assets/images/textura-efecto-falla-negra2.jpg);
+    background-repeat:repeat;
+    background-size:auto;
+    height: 150px;
+}
+.footer-container{
+    height: 100%;
+    padding-top: 40px;
+}                
+.nav-footer-container{
+    display: flex;
+    justify-content: center;
+}
+.nav-footer-container nav ul{
+    display: flex;
+    gap: 40px;
+}
+.nav-footer-container nav ul li a{
+    font-family: "Didact Gothic", sans-serif;
+    color: var(--color_text-primary);
+}
+.nav-footer-container nav ul li a:hover{
+    color: rgb(183, 192, 151);;
+}
+.footer-container p{
+    font-family: "Didact Gothic", sans-serif;
+    color: var(--color_text-primary);
+    font-size: 14px;
+    display: block;
+    text-align: center;
+    margin-top: 30px;
+}
+.footer-container h3{
+    font-family: "Didact Gothic", sans-serif;
+    color: var(--color_text-primary);
+    display: block;
+    text-align: center;
+    font-size: 14px;
+
+}
